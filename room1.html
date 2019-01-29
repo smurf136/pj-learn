@@ -1,0 +1,263 @@
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+            <!-- CSRF Token -->
+            <meta name="csrf-token" content="nCzeaYhjQJttu30Nh9zgKZiO9mOpR3rLgUuCIshu">
+        
+            <title>   Room | PJ-learn  </title>
+                    <meta name="keywords" content="..............."/>
+                     <meta name="author" content="......."/>
+                     <meta name="description"
+                      content="......"/>
+            
+            <!-- Styles -->
+             <link href="dist/css/bootstrap.css" rel="stylesheet">
+             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+             <script>
+                    $(document).ready(function(){
+                        $('[data-toggle="popover"]').popover(); 
+                    });
+             </script>
+             <!-- side bar -->
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+             <!-- modal of send message-->
+             <script>
+                     $('#myModal').on('shown.bs.modal', function () {
+                     $('#myInput').trigger('focus')
+                     })
+            </script>
+            <script>
+                    $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                    })
+            </script>
+        </head>
+        <body>
+            <style>
+                body{
+                    background-color: gray;
+                }
+                ul {
+                        list-style: none;
+                         padding: 0;
+                         margin: 0;
+                }
+
+                li {
+                      padding-left: 1em; 
+                      text-indent: -.7em;
+                }
+                li::before {
+                    content: "• ";
+                    color: rgb(10, 218, 10); /* or whatever color you prefer */
+                }
+                .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+            </style>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand">PJ-learn</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <div class="nav nav-time">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Feauture
+                                      </a>
+                                      <div style="left:100px;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="lobby.html">Daily Sync</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="2.html">Coming Soon</a>
+                                      </div>
+                        </div>
+                        <!--
+                        <li style="" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Feauture
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="lobby.html">Daily Sync</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Coming Soon</a>
+                            </div>
+                        </li>  
+                         -->  
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+        </nav>
+        <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
+            <div class="row">
+                <div class="col-md-3" style="padding-right: 0px;">
+                    <div class="container-fluid text-center" style="background-color:white;height:600px;width: 280px;margin-left: 0px;margin-right: 0px;border-left: 0px;border-right: 0px;">
+                        <ul>
+                            <li>Person 1<img src="mochi.gif" style="width: 45px;margin-left: 45px;margin-top: 10px;">
+                                <button style="background-color: white;border-left-width: 0px;padding-left: 0px; padding-top: 0px;border-top-width: 0px;padding-right: 0px;border-right-width: 0px;padding-bottom: 0px;border-bottom-width: 0px;" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@Mochi">
+                                    <img style="width: 45px;margin-top: 8px;margin-left: 10px;" src="message.png" alt="">
+                                </button>
+                            </li>
+                            <li>Person 2<img src="mochi.gif" style="width: 45px;margin-left: 45px;margin-top: 10px;">
+                                <button style="background-color: white;border-left-width: 0px;padding-left: 0px; padding-top: 0px;border-top-width: 0px;padding-right: 0px;border-right-width: 0px;padding-bottom: 0px;border-bottom-width: 0px;" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@Mochi">
+                                    <img style="width: 45px;margin-top: 8px;margin-left: 10px;" src="message.png" alt="">
+                                </button>
+                            </li>
+                            <li>Person 3<img src="mochi.gif" style="width: 45px;margin-left: 45px;margin-top: 10px;">
+                                <button style="background-color: white;border-left-width: 0px;padding-left: 0px; padding-top: 0px;border-top-width: 0px;padding-right: 0px;border-right-width: 0px;padding-bottom: 0px;border-bottom-width: 0px;" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@Mochi">
+                                    <img style="width: 45px;margin-top: 8px;margin-left: 10px;" src="message.png" alt="">
+                                </button>
+                            </li>
+                            <li>Person 4<img src="mochi.gif" style="width: 45px;margin-left: 45px;margin-top: 10px;">
+                                <button style="background-color: white;border-left-width: 0px;padding-left: 0px; padding-top: 0px;border-top-width: 0px;padding-right: 0px;border-right-width: 0px;padding-bottom: 0px;border-bottom-width: 0px;" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="@Mochi">
+                                    <img style="width: 45px;margin-top: 8px;margin-left: 10px;" src="message.png" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Incognito Message</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="form-group">
+                                      <label for="recipient-name" class="col-form-label">To :</label>
+                                      <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="message-text" class="col-form-label">Message :</label>
+                                      <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                </div>
+                <div class="col-md-8" style="padding-left: 0px;">
+                    <div class="container-fluid" style="height: 600px;width: 980px;
+                    padding-left: 0px;
+                    margin-left: 0px;">
+                        <h4 class="border border-info" style="background-color: rgb(135, 215, 240);border-radius: 5px;width: 62px;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;">Board</h4>
+                        <div class="container-fluid" style="padding-left: 0px;padding-right: 0px; width: 980px;">
+                            <div class="rounded" style="background-color:white;width: 920px;height:300px;margin-bottom:15px;">
+                             <h2>New Topic</h2>
+                             <p>This is place to insert any text to told the other member</p>
+                            </div>
+                        </div>
+                        <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;width: 980px;">
+                            <div style="background-color:gray;height: 260px;">
+                                <div class="modal-body">
+                                    <form>
+                                      <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text" style="width: 910px;height: 100px;"></textarea>
+                                      </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" style="margin-right: 15px">Send message</button>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1" style="container">
+                    <div class="container-fluid" style="padding-left: 5px;background-color: black;width: 55px;margin-right:0px;height: 600px;">
+                        <div class="container rounded-circle">
+                            
+                                <a style="margin-left: 10px;" tabindex="0"  role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+                                        <img class="rounded-circle"src="mochi.gif" alt="Person 1" title="Person 1" style="width: 55px;margin-left: -30px;margin-top: 10px;border-radius: 25px;">
+                                </a>
+                            
+                                
+                                <a style="margin-left: 10px;" tabindex="0"  role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+                                        <img class="rounded-circle"src="mochi.gif" alt="" title="Person 2" style="width: 55px;margin-left: -30px;margin-top: 10px;border-radius: 25px;">
+                                </a>
+                                <a style="margin-left: 10px;" tabindex="0"  role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+                                        <img class="rounded-circle"src="mochi.gif" alt="" title="Person 2" style="width: 55px;margin-left: -30px;margin-top: 10px;border-radius: 25px;">
+                                </a>
+                                <a style="margin-left: 10px;" tabindex="0"  role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+                                        <img class="rounded-circle"src="mochi.gif" alt="" title="Person 3" style="width: 55px;margin-left: -30px;margin-top: 10px;border-radius: 25px;">
+                                </a>
+                                <a style="margin-left: 10px;" tabindex="0"  role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+                                        <img class="rounded-circle"src="mochi.gif" alt="" title="Person 4" style="width: 55px;margin-left: -30px;margin-top: 10px;border-radius: 25px;">
+                                </a>
+                            
+                        </div>
+                      
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+        
+        </body>
+        <!--
+            <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="background-color:wheat  ;width:70px;right: -10px;">
+                            <a href="#" class="w3-bar-item w3-button rounded-circle" style="padding-left: 10px;padding-right: 0px;background-color: white;width: 50px;height: 50px;border-left-width: 1px;margin-left-width:1px;margin-left: 5px;margin-top: 10px;">   
+                            
+                            </a>
+            </div>
+            <div class="container-fluid">
+                        <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="background-color:wheat  ;width:70px;right: -10px;">
+                            <a href="#" class="w3-bar-item w3-button rounded-circle" style="padding-left: 10px;padding-right: 0px;background-color: white;width: 50px;height: 50px;border-left-width: 1px;margin-left-width:1px;margin-left: 5px;margin-top: 10px;">   
+                            
+                            </a>
+                        </div>
+            </div>
+
+         -->

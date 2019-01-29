@@ -1,0 +1,129 @@
+้<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="nCzeaYhjQJttu30Nh9zgKZiO9mOpR3rLgUuCIshu">
+    
+        <title>   Room | PJ-learn  </title>
+                <meta name="keywords" content="..............."/>
+                 <meta name="author" content="......."/>
+                 <meta name="description"
+                  content="......"/>
+        
+        <!-- Styles -->
+         <link href="dist/css/bootstrap.css" rel="stylesheet">
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+         <!-- popover -->
+         <script>
+                $(document).ready(function(){
+                    $('[data-toggle="popover"]').popover(); 
+                });
+         </script>
+         <!-- side bar -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <!-- modal of send message-->
+         <script>
+                 $('#myModal').on('shown.bs.modal', function () {
+                 $('#myInput').trigger('focus')
+                 })
+        </script>
+        <!-- tooltip -->
+        <script>
+                $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+                })
+        </script>
+    </head>
+    <body>
+      <style>
+        body ,p ,a{
+ margin:0;
+ padding:0;
+ overflow:hidden;
+ font-family: monospace;
+ background-color:#34495e;
+ text-decoration:none;
+}
+.crop {
+  position:absolute;
+  top:50%;
+  left:40%;
+  margin:-60px 0 0 -60px;
+  z-index:2;
+}
+ul {
+  list-style:none;
+}
+li {
+  margin-bottom:50px;
+}
+li .click {
+  background-color:#3498db;
+  color:#fff;
+  padding:20px 40px;
+  border-bottom:5px solid #2980b9;
+  transition:all 0.2s ease-in-out;
+}
+li .click:hover {
+  background-color:#2980b9;
+}
+.click:active {
+-webkit-box-shadow: inset 1px 2px 19px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 1px 2px 19px -10px rgba(0,0,0,0.75);
+box-shadow: inset 1px 2px 19px -10px rgba(0,0,0,0.75);
+}
+#content1 ,#content2 {
+  color:#fff;
+  background-color:#34495e;
+  padding:50px;
+  height:100%;
+  position:absolute;
+  z-index:1;
+  opacity:0;
+  -weblit-transition:all 0.2s ease-in-out;
+  -ms-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+#content1:target , #content2:target {
+  opacity:1;
+  z-index:3;
+}
+.closex {
+  text-align:center;
+  position: relative;
+  top: 50px;
+}
+.closex .close {
+  color:#fff;
+}
+      </style>
+        <div class="crop">
+            <ul style="">
+              <li><a href="#content1" class="click">Section 1</a></li>
+              <li><a href="#content2" class="click">Section 2</a></li>
+            </ul>
+          </div>
+          <div id="content1">
+            <h1>Section 1</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="closex">
+              <a href="#" class="close">x</a>
+            </div>
+          </div>
+          <div id="content2">
+            <h1>Section 2</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="closex">
+              <a href="#" class="close">x</a>
+            </div>
+          </div>
+    </body>
+</html>
