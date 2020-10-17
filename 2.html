@@ -79,7 +79,7 @@ li .click:hover {
 -moz-box-shadow: inset 1px 2px 19px -10px rgba(0,0,0,0.75);
 box-shadow: inset 1px 2px 19px -10px rgba(0,0,0,0.75);
 }
-#content1 ,#content2 {
+#content1 ,#content2, #content3{
   color:#fff;
   background-color:#34495e;
   padding:50px;
@@ -92,7 +92,7 @@ box-shadow: inset 1px 2px 19px -10px rgba(0,0,0,0.75);
   -o-transition:all 0.2s ease-in-out;
   transition:all 0.2s ease-in-out;
 }
-#content1:target , #content2:target {
+#content1:target , #content2:target , #content3:target {
   opacity:1;
   z-index:3;
 }
@@ -109,6 +109,7 @@ box-shadow: inset 1px 2px 19px -10px rgba(0,0,0,0.75);
             <ul style="">
               <li><a href="#content1" class="click">Section 1</a></li>
               <li><a href="#content2" class="click">Section 2</a></li>
+              <li><a href="#content3" class="click">Section 3</a></li>
             </ul>
           </div>
           <div id="content1">
@@ -120,6 +121,13 @@ box-shadow: inset 1px 2px 19px -10px rgba(0,0,0,0.75);
           </div>
           <div id="content2">
             <h1>Section 2</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="closex">
+              <a href="#" class="close">x</a>
+            </div>
+          </div>
+          <div id="content3">
+            <h1>Section 3</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             <div class="closex">
               <a href="#" class="close">x</a>
